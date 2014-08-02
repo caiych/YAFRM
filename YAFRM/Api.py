@@ -14,7 +14,6 @@ class Api:
                 return encode_func(con)
 
         def get_all(self):
-            print self.handle_obj.get_all
             res = self.handle_obj.get_all()
             return wrap(res)
 
@@ -23,7 +22,6 @@ class Api:
             return wrap(res)
 
         def create(self):
-            print request.data,"!!"
             return wrap(self.handle_obj.create(decode_func(request.data)))
 
         def get(self,id):

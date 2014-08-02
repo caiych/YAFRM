@@ -1,5 +1,5 @@
 import flask
-from YAFRM.Api import Api
+from YAFRM import Api
 
 app = flask.Flask(__name__)
 api = Api(app)
